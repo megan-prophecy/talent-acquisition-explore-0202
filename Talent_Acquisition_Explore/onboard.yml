@@ -1,0 +1,21 @@
+onboarding_prompts:
+  title: 'Pipeline'
+  welcomeTitle: 'Welcome to Prophecy'
+  datasets:
+    - id: recruiting_1
+      name: recruiting_1
+    - id: recruiting_2
+      name: recruiting_2
+    - id: mapping_table
+      name: mapping_table
+  prompts:
+    - category: EXPLORATION
+      prompts:
+        - prompt: How are the stages defined and mapped from the source system?
+        - prompt: How is this hiring data distributed across regions?
+        - prompt: Provide a summary of the data quality
+    - category: TRANSFORMATION
+      prompts:
+        - prompt: Which coordinator had positions that were open the longest on average?
+        - prompt: Which agencies successfully sourced hired candidates? 
+        - prompt: In which interview category are the most candidates rejected?
