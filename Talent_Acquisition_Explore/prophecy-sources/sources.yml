@@ -1,0 +1,232 @@
+---
+version: 2
+sources:
+- name: "default_bowers_megan_prophecy_io_main"
+  database: "default_bowers_megan_prophecy_io"
+  schema: "main"
+  tables:
+  - name: "recruiting_1"
+    config:
+      tags:
+      - "pipeline:talent_sourcing"
+    columns:
+    - name: "Requisition ID"
+      dataType:
+        type: "String"
+    - name: "Opening ID"
+      dataType:
+        type: "String"
+    - name: "Department"
+      dataType:
+        type: "String"
+    - name: "Applied For"
+      dataType:
+        type: "String"
+    - name: "Recruiter"
+      dataType:
+        type: "String"
+    - name: "Coordinator"
+      dataType:
+        type: "String"
+    - name: "Source"
+      dataType:
+        type: "String"
+    - name: "Stage"
+      dataType:
+        type: "String"
+    - name: "Status"
+      dataType:
+        type: "String"
+    - name: "Application Date"
+      dataType:
+        type: "String"
+    - name: "Start Date (Application)"
+      dataType:
+        type: "String"
+    - name: "Rejection Date"
+      dataType:
+        type: "String"
+    - name: "Rejection Reason"
+      dataType:
+        type: "String"
+    - name: "Rejection Note"
+      dataType:
+        type: "String"
+    - name: "Created (Offer)"
+      dataType:
+        type: "String"
+    - name: "Status (Offer)"
+      dataType:
+        type: "String"
+    - name: "Offer Date"
+      dataType:
+        type: "String"
+    - name: "Sent"
+      dataType:
+        type: "String"
+    - name: "Start Date (Offer)"
+      dataType:
+        type: "String"
+    - name: "Close Date (Job)"
+      dataType:
+        type: "String"
+    - name: "Open Date (Job)"
+      dataType:
+        type: "String"
+    - name: "Status (Job)"
+      dataType:
+        type: "String"
+    - name: "Last Stage Change"
+      dataType:
+        type: "String"
+    - name: "Last Activity"
+      dataType:
+        type: "String"
+    - name: "Type"
+      dataType:
+        type: "String"
+    - name: "Resolved"
+      dataType:
+        type: "String"
+    - name: "Sourcing Strategy"
+      dataType:
+        type: "String"
+    - name: "Sourcers"
+      dataType:
+        type: "String"
+    - name: "Offices"
+      dataType:
+        type: "String"
+    - name: "Application ID"
+      dataType:
+        type: "BigInt"
+    type: "table"
+  - name: "recruiting_2"
+    config:
+      tags:
+      - "pipeline:talent_sourcing"
+    columns:
+    - name: "Requisition ID"
+      dataType:
+        type: "String"
+    - name: "Opening ID"
+      dataType:
+        type: "String"
+    - name: "Department"
+      dataType:
+        type: "String"
+    - name: "Applied For"
+      dataType:
+        type: "String"
+    - name: "Recruiter"
+      dataType:
+        type: "String"
+    - name: "Coordinator"
+      dataType:
+        type: "String"
+    - name: "Source"
+      dataType:
+        type: "String"
+    - name: "Stage"
+      dataType:
+        type: "String"
+    - name: "Status"
+      dataType:
+        type: "String"
+    - name: "Application Date"
+      dataType:
+        type: "String"
+    - name: "Start Date (Application)"
+      dataType:
+        type: "String"
+    - name: "Rejection Date"
+      dataType:
+        type: "String"
+    - name: "Rejection Reason"
+      dataType:
+        type: "String"
+    - name: "Rejection Note"
+      dataType:
+        type: "String"
+    - name: "Created (Offer)"
+      dataType:
+        type: "String"
+    - name: "Status (Offer)"
+      dataType:
+        type: "String"
+    - name: "Offer Date"
+      dataType:
+        type: "String"
+    - name: "Sent"
+      dataType:
+        type: "String"
+    - name: "Start Date (Offer)"
+      dataType:
+        type: "String"
+    - name: "Close Date (Job)"
+      dataType:
+        type: "String"
+    - name: "Open Date (Job)"
+      dataType:
+        type: "String"
+    - name: "Status (Job)"
+      dataType:
+        type: "String"
+    - name: "Last Stage Change"
+      dataType:
+        type: "String"
+    - name: "Last Activity"
+      dataType:
+        type: "String"
+    - name: "Type"
+      dataType:
+        type: "String"
+    - name: "Resolved"
+      dataType:
+        type: "String"
+    - name: "Sourcing Strategy"
+      dataType:
+        type: "String"
+    - name: "Sourcers"
+      dataType:
+        type: "String"
+    - name: "Offices"
+      dataType:
+        type: "String"
+    - name: "Application ID"
+      dataType:
+        type: "BigInt"
+    type: "table"
+  - name: "mapping_table"
+    config:
+      tags:
+      - "pipeline:talent_sourcing"
+    columns:
+    - name: "Steps"
+      dataType:
+        type: "BigInt"
+    - name: "Stage"
+      dataType:
+        type: "String"
+    - name: "Status"
+      dataType:
+        type: "String"
+    - name: "India"
+      dataType:
+        type: "String"
+    - name: "US"
+      dataType:
+        type: "String"
+    - name: "AUS"
+      dataType:
+        type: "String"
+    - name: "UK"
+      dataType:
+        type: "String"
+    - name: "Category"
+      dataType:
+        type: "String"
+    - name: "Definition"
+      dataType:
+        type: "String"
+    type: "table"

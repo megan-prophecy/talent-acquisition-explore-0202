@@ -1,0 +1,101 @@
+{
+  "id" : "talent_sourcing",
+  "metainfo" : {
+    "label" : "talent_sourcing",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "sourcer",
+          "kind" : {
+            "type" : "string",
+            "value" : "'Prime Placements'"
+          }
+        } ]
+      },
+      "parameterSets" : [ ]
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "iAk8pmM5MJ0DSqgZe5q6j$$MXqiRPoa7G9bBMsSV4T2L" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "application_stage_by_source_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "T9cq2ubBKS7GM87TKXmvp$$W4Wg7XQ2zEoQ0E8NXg9Qj" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "3ZCYKeveu2A5ejnSofSMI$$Roor2lGHwZICQck_2IWm3" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "06MFSRchL-BYPxYsgOrBi$$P1TFZlLhCD-XD3z9WowhH" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql",
+      "-2ZL9_kUiuiw04OXNzQin$$LUCHZbi13qJmZnQAqZOYv" : "models/talent_sourcing/talent_sourcing__application_stage_by_source.sql"
+    }
+  },
+  "processes" : {
+    "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W" : {
+      "id" : "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "talent_sourcing__application_stage_by_source",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "talent_sourcing__application_stage_by_source"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "application_stage_by_source_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N", "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W", "iAk8pmM5MJ0DSqgZe5q6j$$MXqiRPoa7G9bBMsSV4T2L", "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS", "T9cq2ubBKS7GM87TKXmvp$$W4Wg7XQ2zEoQ0E8NXg9Qj", "-2ZL9_kUiuiw04OXNzQin$$LUCHZbi13qJmZnQAqZOYv", "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt", "3ZCYKeveu2A5ejnSofSMI$$Roor2lGHwZICQck_2IWm3", "06MFSRchL-BYPxYsgOrBi$$P1TFZlLhCD-XD3z9WowhH" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "talent_sourcing__application_stage_by_source_in_0",
+          "slug" : "in_0"
+        }, {
+          "id" : "talent_sourcing__application_stage_by_source_in_1",
+          "slug" : "in_1"
+        }, {
+          "id" : "talent_sourcing__application_stage_by_source_in_2",
+          "slug" : "in_2"
+        }, {
+          "id" : "talent_sourcing__application_stage_by_source_in_3",
+          "slug" : "in_3"
+        } ],
+        "outputs" : [ {
+          "id" : "talent_sourcing__application_stage_by_source_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "hJOh_6ypSIPMPBpPbua5D$$-r5JBHP-5DU4zsS0VtnGm" : {
+      "id" : "hJOh_6ypSIPMPBpPbua5D$$-r5JBHP-5DU4zsS0VtnGm",
+      "component" : "Visualize",
+      "metadata" : {
+        "label" : "Visualize_1",
+        "x" : 60,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : { },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sS7ZH7evmTNgkmFRvzkcF$$EfijBBNEhphkxGU1fqsrl",
+          "slug" : "application_stage_by_source"
+        } ],
+        "outputs" : [ {
+          "id" : "Hg-hQ3garCV0EuhZw6Dpp$$vr9UZuxCgHAbeV0Xp4C9g",
+          "slug" : "out0"
+        } ]
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "XbH8zDi8x1yzAruvtk6k1$$b4g9tY8FlFXSvwdiocl4z",
+    "source" : "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W",
+    "sourcePort" : "talent_sourcing__application_stage_by_source_out_0",
+    "target" : "hJOh_6ypSIPMPBpPbua5D$$-r5JBHP-5DU4zsS0VtnGm",
+    "targetPort" : "sS7ZH7evmTNgkmFRvzkcF$$EfijBBNEhphkxGU1fqsrl"
+  } ],
+  "component" : "Pipeline"
+}

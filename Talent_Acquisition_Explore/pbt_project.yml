@@ -1,0 +1,333 @@
+name: Talent_Acquisition_Explore
+description: ''
+version: 0.0.1
+author: bowers.megan@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-02-02 16:12:21'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: bowers.megan@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2026-02-02 16:12:25'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: bowers.megan@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
+    createdAt: '2026-02-02 16:13:29'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/default_bowers_megan_prophecy_io_main:
+    name: default_bowers_megan_prophecy_io_main
+    description: null
+    author: bowers.megan@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2026-02-02 16:14:29'
+    tables:
+    - name: recruiting_1
+      schema:
+        entityType: ''
+        providerType: ProphecyManaged
+        fields:
+        - name: Requisition ID
+          dataType:
+            type: String
+        - name: Opening ID
+          dataType:
+            type: String
+        - name: Department
+          dataType:
+            type: String
+        - name: Applied For
+          dataType:
+            type: String
+        - name: Recruiter
+          dataType:
+            type: String
+        - name: Coordinator
+          dataType:
+            type: String
+        - name: Source
+          dataType:
+            type: String
+        - name: Stage
+          dataType:
+            type: String
+        - name: Status
+          dataType:
+            type: String
+        - name: Application Date
+          dataType:
+            type: String
+        - name: Start Date (Application)
+          dataType:
+            type: String
+        - name: Rejection Date
+          dataType:
+            type: String
+        - name: Rejection Reason
+          dataType:
+            type: String
+        - name: Rejection Note
+          dataType:
+            type: String
+        - name: Created (Offer)
+          dataType:
+            type: String
+        - name: Status (Offer)
+          dataType:
+            type: String
+        - name: Offer Date
+          dataType:
+            type: String
+        - name: Sent
+          dataType:
+            type: String
+        - name: Start Date (Offer)
+          dataType:
+            type: String
+        - name: Close Date (Job)
+          dataType:
+            type: String
+        - name: Open Date (Job)
+          dataType:
+            type: String
+        - name: Status (Job)
+          dataType:
+            type: String
+        - name: Last Stage Change
+          dataType:
+            type: String
+        - name: Last Activity
+          dataType:
+            type: String
+        - name: Type
+          dataType:
+            type: String
+        - name: Resolved
+          dataType:
+            type: String
+        - name: Sourcing Strategy
+          dataType:
+            type: String
+        - name: Sourcers
+          dataType:
+            type: String
+        - name: Offices
+          dataType:
+            type: String
+        - name: Application ID
+          dataType:
+            type: BigInt
+      description: null
+      author: bowers.megan@prophecy.io
+      createdAt: '2026-02-02 16:14:29'
+      tableType: table
+    - name: recruiting_2
+      schema:
+        entityType: ''
+        providerType: ProphecyManaged
+        fields:
+        - name: Requisition ID
+          dataType:
+            type: String
+        - name: Opening ID
+          dataType:
+            type: String
+        - name: Department
+          dataType:
+            type: String
+        - name: Applied For
+          dataType:
+            type: String
+        - name: Recruiter
+          dataType:
+            type: String
+        - name: Coordinator
+          dataType:
+            type: String
+        - name: Source
+          dataType:
+            type: String
+        - name: Stage
+          dataType:
+            type: String
+        - name: Status
+          dataType:
+            type: String
+        - name: Application Date
+          dataType:
+            type: String
+        - name: Start Date (Application)
+          dataType:
+            type: String
+        - name: Rejection Date
+          dataType:
+            type: String
+        - name: Rejection Reason
+          dataType:
+            type: String
+        - name: Rejection Note
+          dataType:
+            type: String
+        - name: Created (Offer)
+          dataType:
+            type: String
+        - name: Status (Offer)
+          dataType:
+            type: String
+        - name: Offer Date
+          dataType:
+            type: String
+        - name: Sent
+          dataType:
+            type: String
+        - name: Start Date (Offer)
+          dataType:
+            type: String
+        - name: Close Date (Job)
+          dataType:
+            type: String
+        - name: Open Date (Job)
+          dataType:
+            type: String
+        - name: Status (Job)
+          dataType:
+            type: String
+        - name: Last Stage Change
+          dataType:
+            type: String
+        - name: Last Activity
+          dataType:
+            type: String
+        - name: Type
+          dataType:
+            type: String
+        - name: Resolved
+          dataType:
+            type: String
+        - name: Sourcing Strategy
+          dataType:
+            type: String
+        - name: Sourcers
+          dataType:
+            type: String
+        - name: Offices
+          dataType:
+            type: String
+        - name: Application ID
+          dataType:
+            type: BigInt
+      description: null
+      author: bowers.megan@prophecy.io
+      createdAt: '2026-02-02 16:15:03'
+      tableType: table
+    - name: mapping_table
+      schema:
+        entityType: ''
+        providerType: ProphecyManaged
+        fields:
+        - name: Steps
+          dataType:
+            type: BigInt
+        - name: Stage
+          dataType:
+            type: String
+        - name: Status
+          dataType:
+            type: String
+        - name: India
+          dataType:
+            type: String
+        - name: US
+          dataType:
+            type: String
+        - name: AUS
+          dataType:
+            type: String
+        - name: UK
+          dataType:
+            type: String
+        - name: Category
+          dataType:
+            type: String
+        - name: Definition
+          dataType:
+            type: String
+      description: null
+      author: bowers.megan@prophecy.io
+      createdAt: '2026-02-02 16:19:40'
+      tableType: table
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: bowers.megan@prophecy.io
+  createdAt: '2026-02-02 16:12:21'
+dependencies: []
+projectDependencies:
+  '22':
+    projectUID: 22
+    projectName: prophecy_basics
+    repositoryPath: gitUri=https://github.com/prophecy-io/prophecy-basics&subPath=
+    version: 1.0.7.dev6
+    isDefault: true
+    author: null
+    createdAt: '2026-02-02 16:12:21'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: false
+pipelineConfigurations: {}
+projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/talent_sourcing:
+    name: talent_sourcing
+    schema: null
+    description: null
+    author: bowers.megan@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/talent_sourcing.json
+    - pipelines/talent_sourcing.py
+    - models/talent_sourcing/schema.yml
+    - models/talent_sourcing/talent_sourcing__application_stage_by_source.sql
+    createdAt: '2026-02-02 16:13:29'
+sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/time_to_fill:
+    name: time_to_fill
+    schema: null
+    description: null
+    author: bowers.megan@prophecy.io
+    files:
+    - apps/time_to_fill.json
+    createdAt: '2026-02-02 16:27:22'
+    sqlOrchestrationPipelineName: talent_sourcing

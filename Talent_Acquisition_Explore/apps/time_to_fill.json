@@ -1,0 +1,114 @@
+{
+  "id" : "time_to_fill",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "talent_sourcing",
+    "parameterSet" : "default"
+  },
+  "definition" : {
+    "template" : [ {
+      "key" : "ZWbUCGbzkhmzuJMgrXQbx",
+      "id" : "Text1",
+      "type" : "Text",
+      "properties" : {
+        "content" : "## Report Description\n\nAnalysis of recruiting agency and coordinator effectiveness for Q3 & Q4 2025"
+      }
+    }, {
+      "key" : "aLAccLAv2VlP88Naehe3G",
+      "id" : "Dropdown1",
+      "type" : "Dropdown",
+      "properties" : {
+        "configField" : "sourcer",
+        "label" : "Sourcing Agency",
+        "options" : [ {
+          "label" : "Prime Placements",
+          "value" : "Prime Placements",
+          "error" : false
+        }, {
+          "label" : "Global Talent Pro",
+          "value" : "Global Talent Pro",
+          "error" : false
+        }, {
+          "label" : "Elite Headhunters",
+          "value" : "Elite Headhunters",
+          "error" : false
+        }, {
+          "label" : "Apex Recruiters",
+          "value" : "Apex Recruiters",
+          "error" : false
+        }, {
+          "label" : "The Recruiting Hub",
+          "value" : "The Recruiting Hub",
+          "error" : false
+        }, {
+          "label" : "Synergy Recruit",
+          "value" : "Syn",
+          "error" : false
+        }, {
+          "label" : "NextGen Staffing",
+          "value" : "NextGen Staffing",
+          "error" : false
+        } ],
+        "configType" : "string",
+        "defaultValue" : "Prime Placements"
+      }
+    }, {
+      "key" : "fC0VO-dLmSHFIsxRBKDkj",
+      "id" : "Chart1",
+      "type" : "bar",
+      "properties" : {
+        "tableId" : "hJOh_6ypSIPMPBpPbua5D$$-r5JBHP-5DU4zsS0VtnGm",
+        "title" : "Average Days to Fill Position By Department",
+        "config" : {
+          "xAxisColumn" : "Department",
+          "yAxisColumn" : [ {
+            "name" : "Time Open",
+            "agg" : "Avg",
+            "color" : "#4c4ddc",
+            "error" : false
+          } ],
+          "showLegend" : true,
+          "showTooltip" : true,
+          "barAndLineConfig" : {
+            "showGrid" : true
+          },
+          "yAxisConfig" : { },
+          "invalidConfig" : false
+        },
+        "errors" : { },
+        "type" : "bar"
+      },
+      "errors" : { }
+    }, {
+      "key" : "3FR_xuSzhCAhi5YWvN1bQ",
+      "id" : "Chart2",
+      "type" : "pie",
+      "properties" : {
+        "tableId" : "hJOh_6ypSIPMPBpPbua5D$$-r5JBHP-5DU4zsS0VtnGm",
+        "title" : "Number of Positions Open by In-house Coordinator",
+        "config" : {
+          "xAxisColumn" : "Coordinator",
+          "yAxisColumn" : [ {
+            "name" : "Time Open",
+            "agg" : "Count",
+            "color" : "#4c4ddc",
+            "error" : false
+          } ],
+          "showLegend" : true,
+          "showTooltip" : true,
+          "pieConfig" : {
+            "angle" : "semi",
+            "chartStyle" : "pie",
+            "innerRadius" : 0,
+            "outerRadius" : 100,
+            "centerX" : 50,
+            "centerY" : 60
+          }
+        },
+        "errors" : { },
+        "type" : "pie"
+      }
+    } ]
+  },
+  "instances" : { }
+}

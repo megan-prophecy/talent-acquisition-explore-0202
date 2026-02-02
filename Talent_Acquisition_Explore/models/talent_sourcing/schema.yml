@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "talent_sourcing__application_stage_by_source"
+  tags:
+  - "prophecy_temp"

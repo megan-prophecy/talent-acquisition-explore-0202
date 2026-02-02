@@ -1,0 +1,768 @@
+{
+  "id" : "talent_sourcing__application_stage_by_source",
+  "metainfo" : {
+    "label" : "talent_sourcing__application_stage_by_source",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "ephemeral",
+        "database" : "\"bowers_megan_prophecy_io_team\"",
+        "schema" : "\"schema\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W" : {
+      "id" : "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "application_stage_by_source",
+        "x" : -120,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "-MhAKpoCdBifX3lCJvgUB$$9EwnRujVg6vTYqe5UM7G-##Source" ],
+        "condition" : {
+          "expression" : "Source = {{ var('sourcer') }}"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "-MhAKpoCdBifX3lCJvgUB$$9EwnRujVg6vTYqe5UM7G-",
+          "slug" : "application_stage_report"
+        } ],
+        "outputs" : [ {
+          "id" : "ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "iAk8pmM5MJ0DSqgZe5q6j$$MXqiRPoa7G9bBMsSV4T2L" : {
+      "id" : "iAk8pmM5MJ0DSqgZe5q6j$$MXqiRPoa7G9bBMsSV4T2L",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "calc_time_to_fill",
+        "x" : -300,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Requisition ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Opening ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Department", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Applied For", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Recruiter", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Coordinator", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Source", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Stage", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Application Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Start Date (Application)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Reason", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Note", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Created (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Offer Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sent", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Start Date (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Close Date (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Open Date (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Last Stage Change", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Last Activity", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Type", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Resolved", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sourcing Strategy", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sourcers", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Offices", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Application ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Category", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Definition" ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "\"Requisition ID\""
+          },
+          "alias" : "\"Requisition ID\"",
+          "_row_id" : "1878676173"
+        }, {
+          "expression" : {
+            "expression" : "\"Opening ID\""
+          },
+          "alias" : "\"Opening ID\"",
+          "_row_id" : "199374368"
+        }, {
+          "expression" : {
+            "expression" : "Department"
+          },
+          "alias" : "Department",
+          "_row_id" : "404296584"
+        }, {
+          "expression" : {
+            "expression" : "\"Applied For\""
+          },
+          "alias" : "\"Applied For\"",
+          "_row_id" : "972318274"
+        }, {
+          "expression" : {
+            "expression" : "Recruiter"
+          },
+          "alias" : "Recruiter",
+          "_row_id" : "1477597926"
+        }, {
+          "expression" : {
+            "expression" : "Coordinator"
+          },
+          "alias" : "Coordinator",
+          "_row_id" : "888218251"
+        }, {
+          "expression" : {
+            "expression" : "Source"
+          },
+          "alias" : "Source",
+          "_row_id" : "716253232"
+        }, {
+          "expression" : {
+            "expression" : "Stage"
+          },
+          "alias" : "Stage",
+          "_row_id" : "891187322"
+        }, {
+          "expression" : {
+            "expression" : "Status"
+          },
+          "alias" : "Status",
+          "_row_id" : "80705993"
+        }, {
+          "expression" : {
+            "expression" : "\"Application Date\""
+          },
+          "alias" : "\"Application Date\"",
+          "_row_id" : "1890231412"
+        }, {
+          "expression" : {
+            "expression" : "\"Start Date (Application)\""
+          },
+          "alias" : "\"Start Date (Application)\"",
+          "_row_id" : "1009771155"
+        }, {
+          "expression" : {
+            "expression" : "\"Rejection Date\""
+          },
+          "alias" : "\"Rejection Date\"",
+          "_row_id" : "1612617081"
+        }, {
+          "expression" : {
+            "expression" : "\"Rejection Reason\""
+          },
+          "alias" : "\"Rejection Reason\"",
+          "_row_id" : "752420036"
+        }, {
+          "expression" : {
+            "expression" : "\"Rejection Note\""
+          },
+          "alias" : "\"Rejection Note\"",
+          "_row_id" : "32647051"
+        }, {
+          "expression" : {
+            "expression" : "\"Created (Offer)\""
+          },
+          "alias" : "\"Created (Offer)\"",
+          "_row_id" : "2132962447"
+        }, {
+          "expression" : {
+            "expression" : "\"Status (Offer)\""
+          },
+          "alias" : "\"Status (Offer)\"",
+          "_row_id" : "754559060"
+        }, {
+          "expression" : {
+            "expression" : "\"Offer Date\""
+          },
+          "alias" : "\"Offer Date\"",
+          "_row_id" : "1840508260"
+        }, {
+          "expression" : {
+            "expression" : "Sent"
+          },
+          "alias" : "Sent",
+          "_row_id" : "1436683806"
+        }, {
+          "expression" : {
+            "expression" : "\"Start Date (Offer)\""
+          },
+          "alias" : "\"Start Date (Offer)\"",
+          "_row_id" : "865573354"
+        }, {
+          "expression" : {
+            "expression" : "\"Close Date (Job)\""
+          },
+          "alias" : "\"Close Date (Job)\"",
+          "_row_id" : "1748882236"
+        }, {
+          "expression" : {
+            "expression" : "\"Open Date (Job)\""
+          },
+          "alias" : "\"Open Date (Job)\"",
+          "_row_id" : "1000773314"
+        }, {
+          "expression" : {
+            "expression" : "\"Status (Job)\""
+          },
+          "alias" : "\"Status (Job)\"",
+          "_row_id" : "1180001963"
+        }, {
+          "expression" : {
+            "expression" : "\"Last Stage Change\""
+          },
+          "alias" : "\"Last Stage Change\"",
+          "_row_id" : "1913317073"
+        }, {
+          "expression" : {
+            "expression" : "\"Last Activity\""
+          },
+          "alias" : "\"Last Activity\"",
+          "_row_id" : "2004315672"
+        }, {
+          "expression" : {
+            "expression" : "Type"
+          },
+          "alias" : "Type",
+          "_row_id" : "713218853"
+        }, {
+          "expression" : {
+            "expression" : "Resolved"
+          },
+          "alias" : "Resolved",
+          "_row_id" : "453900776"
+        }, {
+          "expression" : {
+            "expression" : "\"Sourcing Strategy\""
+          },
+          "alias" : "\"Sourcing Strategy\"",
+          "_row_id" : "887825984"
+        }, {
+          "expression" : {
+            "expression" : "Sourcers"
+          },
+          "alias" : "Sourcers",
+          "_row_id" : "1539373894"
+        }, {
+          "expression" : {
+            "expression" : "Offices"
+          },
+          "alias" : "Offices",
+          "_row_id" : "1200608660"
+        }, {
+          "expression" : {
+            "expression" : "\"Application ID\""
+          },
+          "alias" : "\"Application ID\"",
+          "_row_id" : "1265540994"
+        }, {
+          "expression" : {
+            "expression" : "Category"
+          },
+          "alias" : "Category",
+          "_row_id" : "1504921534"
+        }, {
+          "expression" : {
+            "expression" : "Definition"
+          },
+          "alias" : "Definition",
+          "_row_id" : "1215086523"
+        }, {
+          "expression" : {
+            "expression" : "DATEDIFF('day', \"Open Date (Job)\", \"Close Date (Job)\")  "
+          },
+          "alias" : "\"Time Open\"",
+          "_row_id" : "IL9VbgQbVh"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief",
+          "slug" : "application_stage_details"
+        } ],
+        "outputs" : [ {
+          "id" : "68tP7TH_Cy3KSCVYecVYG$$k1b0Gr5eCVe36Y7pJwo8m",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "application_stage_by_source_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N" : {
+      "id" : "application_stage_by_source_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "application_stage_by_source"
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM application_stage_by_source\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "T9cq2ubBKS7GM87TKXmvp$$W4Wg7XQ2zEoQ0E8NXg9Qj" : {
+      "id" : "T9cq2ubBKS7GM87TKXmvp$$W4Wg7XQ2zEoQ0E8NXg9Qj",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "mapping_table",
+        "x" : -700,
+        "y" : -40,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "mapping_table",
+          "sourceName" : "default_bowers_megan_prophecy_io_main",
+          "sourceType" : "Table"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GAkjC7XL6QJzrKjyyVue8$$U7wqaPG6R5Mm0h6gTNGHT",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "3ZCYKeveu2A5ejnSofSMI$$Roor2lGHwZICQck_2IWm3" : {
+      "id" : "3ZCYKeveu2A5ejnSofSMI$$Roor2lGHwZICQck_2IWm3",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "recruiting_1",
+        "x" : -1100,
+        "y" : -340,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "recruiting_1",
+          "sourceName" : "default_bowers_megan_prophecy_io_main",
+          "sourceType" : "Table"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZUcauBQFlQ876kTsvMMao$$BRKY8R1-9Du5XM56xWpNX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt" : {
+      "id" : "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt",
+      "component" : "SFUnion",
+      "metadata" : {
+        "label" : "Union_1",
+        "x" : -880,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "operationType" : "union",
+        "preserveDuplicates" : false,
+        "useMinus" : false,
+        "inputAliases" : [ "in0", "in1" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "icJPKBqt-wz-tWHYK4zni$$Tet34dO89f-Ecf0ZOaM18",
+          "slug" : "in0"
+        }, {
+          "id" : "zqoGDP2Z9Iht3j2VE4UzS$$sYlFJasq0qhxt290IWBzO",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "5cjfJ-RhieEqOL0f3SkV0$$-uPpbiH1fD3UlMn2Iees6",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS" : {
+      "id" : "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "application_stage_details",
+        "x" : -480,
+        "y" : -240,
+        "phase" : 0
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "in1.Stage = in0.Stage"
+          },
+          "joinType" : "inner"
+        } ],
+        "allowSelection" : false,
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "in0.\"Requisition ID\""
+          },
+          "alias" : "\"Requisition ID\"",
+          "_row_id" : "368848254"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Opening ID\""
+          },
+          "alias" : "\"Opening ID\"",
+          "_row_id" : "1321009859"
+        }, {
+          "expression" : {
+            "expression" : "in0.Department"
+          },
+          "alias" : "Department",
+          "_row_id" : "938532839"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Applied For\""
+          },
+          "alias" : "\"Applied For\"",
+          "_row_id" : "2097933235"
+        }, {
+          "expression" : {
+            "expression" : "in0.Recruiter"
+          },
+          "alias" : "Recruiter",
+          "_row_id" : "2046423069"
+        }, {
+          "expression" : {
+            "expression" : "in0.Coordinator"
+          },
+          "alias" : "Coordinator",
+          "_row_id" : "91776545"
+        }, {
+          "expression" : {
+            "expression" : "in0.Source"
+          },
+          "alias" : "Source",
+          "_row_id" : "505737126"
+        }, {
+          "expression" : {
+            "expression" : "in0.Stage"
+          },
+          "alias" : "Stage",
+          "_row_id" : "1988177252"
+        }, {
+          "expression" : {
+            "expression" : "in0.Status"
+          },
+          "alias" : "Status",
+          "_row_id" : "32247880"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Application Date\""
+          },
+          "alias" : "\"Application Date\"",
+          "_row_id" : "1682110203"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Start Date (Application)\""
+          },
+          "alias" : "\"Start Date (Application)\"",
+          "_row_id" : "1009798717"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Rejection Date\""
+          },
+          "alias" : "\"Rejection Date\"",
+          "_row_id" : "363248099"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Rejection Reason\""
+          },
+          "alias" : "\"Rejection Reason\"",
+          "_row_id" : "525881172"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Rejection Note\""
+          },
+          "alias" : "\"Rejection Note\"",
+          "_row_id" : "1480480773"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Created (Offer)\""
+          },
+          "alias" : "\"Created (Offer)\"",
+          "_row_id" : "99611493"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Status (Offer)\""
+          },
+          "alias" : "\"Status (Offer)\"",
+          "_row_id" : "1242290016"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Offer Date\""
+          },
+          "alias" : "\"Offer Date\"",
+          "_row_id" : "1112635147"
+        }, {
+          "expression" : {
+            "expression" : "in0.Sent"
+          },
+          "alias" : "Sent",
+          "_row_id" : "1266546933"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Start Date (Offer)\""
+          },
+          "alias" : "\"Start Date (Offer)\"",
+          "_row_id" : "810079297"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Close Date (Job)\""
+          },
+          "alias" : "\"Close Date (Job)\"",
+          "_row_id" : "130912124"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Open Date (Job)\""
+          },
+          "alias" : "\"Open Date (Job)\"",
+          "_row_id" : "781464464"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Status (Job)\""
+          },
+          "alias" : "\"Status (Job)\"",
+          "_row_id" : "1605405147"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Last Stage Change\""
+          },
+          "alias" : "\"Last Stage Change\"",
+          "_row_id" : "462802205"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Last Activity\""
+          },
+          "alias" : "\"Last Activity\"",
+          "_row_id" : "1491456201"
+        }, {
+          "expression" : {
+            "expression" : "in0.Type"
+          },
+          "alias" : "Type",
+          "_row_id" : "104486059"
+        }, {
+          "expression" : {
+            "expression" : "in0.Resolved"
+          },
+          "alias" : "Resolved",
+          "_row_id" : "533760354"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Sourcing Strategy\""
+          },
+          "alias" : "\"Sourcing Strategy\"",
+          "_row_id" : "1176798070"
+        }, {
+          "expression" : {
+            "expression" : "in0.Sourcers"
+          },
+          "alias" : "Sourcers",
+          "_row_id" : "1046404681"
+        }, {
+          "expression" : {
+            "expression" : "in0.Offices"
+          },
+          "alias" : "Offices",
+          "_row_id" : "1438545353"
+        }, {
+          "expression" : {
+            "expression" : "in0.\"Application ID\""
+          },
+          "alias" : "\"Application ID\"",
+          "_row_id" : "500567230"
+        }, {
+          "expression" : {
+            "expression" : "in1.Category"
+          },
+          "alias" : "Category",
+          "_row_id" : "344684079"
+        }, {
+          "expression" : {
+            "expression" : "in1.Definition"
+          },
+          "alias" : "Definition",
+          "_row_id" : "1362258694"
+        } ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Requisition ID", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Opening ID", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Department", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Applied For", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Recruiter", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Coordinator", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Source", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Application Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Start Date (Application)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Reason", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Note", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Created (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Offer Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sent", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Start Date (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Close Date (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Open Date (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Last Stage Change", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Last Activity", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Type", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Resolved", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sourcing Strategy", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sourcers", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Offices", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Application ID", "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Category", "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Definition" ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf",
+          "slug" : "in0"
+        }, {
+          "id" : "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "2_UA_qH_xoJXWB8c3J8Pp$$nN53yxw0Q6ixAixbm0TPa",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "06MFSRchL-BYPxYsgOrBi$$P1TFZlLhCD-XD3z9WowhH" : {
+      "id" : "06MFSRchL-BYPxYsgOrBi$$P1TFZlLhCD-XD3z9WowhH",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "recruiting_2",
+        "x" : -1100,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "recruiting_2",
+          "sourceName" : "default_bowers_megan_prophecy_io_main",
+          "sourceType" : "Table"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "7oe1Tv-AS3un4Y2xJ_kr8$$C377RT3c5LRdlUL_VvMWB",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "-2ZL9_kUiuiw04OXNzQin$$LUCHZbi13qJmZnQAqZOYv" : {
+      "id" : "-2ZL9_kUiuiw04OXNzQin$$LUCHZbi13qJmZnQAqZOYv",
+      "component" : "MultiColumnEdit",
+      "metadata" : {
+        "label" : "parse_application_dates",
+        "x" : -700,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "changeOutputFieldName" : false,
+        "relation_name" : [ "Union_1" ],
+        "columnNames" : [ "Application Date", "Start Date (Application)", "Rejection Date", "Offer Date", "Start Date (Offer)", "Close Date (Job)", "Open Date (Job)" ],
+        "_oldMacroProperties" : {
+          "macroName" : "MultiColumnEdit",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "[\"Union_1\"]"
+          }, {
+            "name" : "schema",
+            "value" : "[{\"name\": \"Requisition ID\", \"dataType\": \"String\"}, {\"name\": \"Opening ID\", \"dataType\": \"String\"}, {\"name\": \"Department\", \"dataType\": \"String\"}, {\"name\": \"Applied For\", \"dataType\": \"String\"}, {\"name\": \"Recruiter\", \"dataType\": \"String\"}, {\"name\": \"Coordinator\", \"dataType\": \"String\"}, {\"name\": \"Source\", \"dataType\": \"String\"}, {\"name\": \"Stage\", \"dataType\": \"String\"}, {\"name\": \"Status\", \"dataType\": \"String\"}, {\"name\": \"Application Date\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Application)\", \"dataType\": \"String\"}, {\"name\": \"Rejection Date\", \"dataType\": \"String\"}, {\"name\": \"Rejection Reason\", \"dataType\": \"String\"}, {\"name\": \"Rejection Note\", \"dataType\": \"String\"}, {\"name\": \"Created (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Status (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Offer Date\", \"dataType\": \"String\"}, {\"name\": \"Sent\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Close Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Open Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Status (Job)\", \"dataType\": \"String\"}, {\"name\": \"Last Stage Change\", \"dataType\": \"String\"}, {\"name\": \"Last Activity\", \"dataType\": \"String\"}, {\"name\": \"Type\", \"dataType\": \"String\"}, {\"name\": \"Resolved\", \"dataType\": \"String\"}, {\"name\": \"Sourcing Strategy\", \"dataType\": \"String\"}, {\"name\": \"Sourcers\", \"dataType\": \"String\"}, {\"name\": \"Offices\", \"dataType\": \"String\"}, {\"name\": \"Application ID\", \"dataType\": \"BigInt\"}]"
+          }, {
+            "name" : "columnNames",
+            "value" : "[\"Application Date\", \"Start Date (Application)\", \"Rejection Date\", \"Offer Date\", \"Start Date (Offer)\", \"Close Date (Job)\", \"Open Date (Job)\"]"
+          }, {
+            "name" : "expressionToBeApplied",
+            "value" : "strptime(column_value, '%m/%d/%Y')"
+          }, {
+            "name" : "changeOutputFieldName",
+            "value" : "false"
+          }, {
+            "name" : "prefixSuffixOption",
+            "value" : "Prefix"
+          }, {
+            "name" : "prefixSuffixToBeAdded",
+            "value" : ""
+          } ]
+        },
+        "schema" : "[{\"name\": \"Requisition ID\", \"dataType\": \"String\"}, {\"name\": \"Opening ID\", \"dataType\": \"String\"}, {\"name\": \"Department\", \"dataType\": \"String\"}, {\"name\": \"Applied For\", \"dataType\": \"String\"}, {\"name\": \"Recruiter\", \"dataType\": \"String\"}, {\"name\": \"Coordinator\", \"dataType\": \"String\"}, {\"name\": \"Source\", \"dataType\": \"String\"}, {\"name\": \"Stage\", \"dataType\": \"String\"}, {\"name\": \"Status\", \"dataType\": \"String\"}, {\"name\": \"Application Date\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Application)\", \"dataType\": \"String\"}, {\"name\": \"Rejection Date\", \"dataType\": \"String\"}, {\"name\": \"Rejection Reason\", \"dataType\": \"String\"}, {\"name\": \"Rejection Note\", \"dataType\": \"String\"}, {\"name\": \"Created (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Status (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Offer Date\", \"dataType\": \"String\"}, {\"name\": \"Sent\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Close Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Open Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Status (Job)\", \"dataType\": \"String\"}, {\"name\": \"Last Stage Change\", \"dataType\": \"String\"}, {\"name\": \"Last Activity\", \"dataType\": \"String\"}, {\"name\": \"Type\", \"dataType\": \"String\"}, {\"name\": \"Resolved\", \"dataType\": \"String\"}, {\"name\": \"Sourcing Strategy\", \"dataType\": \"String\"}, {\"name\": \"Sourcers\", \"dataType\": \"String\"}, {\"name\": \"Offices\", \"dataType\": \"String\"}, {\"name\": \"Application ID\", \"dataType\": \"BigInt\"}]",
+        "expressionToBeApplied" : "strptime(column_value, '%m/%d/%Y')",
+        "prefixSuffixToBeAdded" : "",
+        "prefixSuffixOption" : "Prefix"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "m9XwxaIomExybgMYt4646$$kc89_j9wuCkzq3itvvUKs",
+          "slug" : "Union_1"
+        } ],
+        "outputs" : [ {
+          "id" : "zj1OA29RlKOsgTR9PC3zv$$Rq0s5oehNK9imqqc_GOsS",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N_application_stage_by_source_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N",
+    "source" : "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W",
+    "sourcePort" : "ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N",
+    "target" : "application_stage_by_source_ChGtkghLQBAl-7HnQebJd$$SuCZdpVV_L4BqCFiSxx7N",
+    "targetPort" : "input_port_0",
+    "isWireless" : false
+  }, {
+    "id" : "-qajkbjXMSwOm0bqkIROL$$Ez2cesafNyyjgs9hwJ1GL",
+    "source" : "iAk8pmM5MJ0DSqgZe5q6j$$MXqiRPoa7G9bBMsSV4T2L",
+    "sourcePort" : "68tP7TH_Cy3KSCVYecVYG$$k1b0Gr5eCVe36Y7pJwo8m",
+    "target" : "MzCh1J2-17fv3zEEeqThm$$TUB5LclAdsGkCdCCLa-8W",
+    "targetPort" : "-MhAKpoCdBifX3lCJvgUB$$9EwnRujVg6vTYqe5UM7G-",
+    "isWireless" : false
+  }, {
+    "id" : "1tgxPlGcMSqbfekJtuu6j$$GqhR0riybNNuqQDtkFtrY",
+    "source" : "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS",
+    "sourcePort" : "2_UA_qH_xoJXWB8c3J8Pp$$nN53yxw0Q6ixAixbm0TPa",
+    "target" : "iAk8pmM5MJ0DSqgZe5q6j$$MXqiRPoa7G9bBMsSV4T2L",
+    "targetPort" : "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief",
+    "isWireless" : false
+  }, {
+    "id" : "S1GLt-trgE8xWKSxDlzpk$$YHq8ahLPxxd-sdiVsubje",
+    "source" : "-2ZL9_kUiuiw04OXNzQin$$LUCHZbi13qJmZnQAqZOYv",
+    "sourcePort" : "zj1OA29RlKOsgTR9PC3zv$$Rq0s5oehNK9imqqc_GOsS",
+    "target" : "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS",
+    "targetPort" : "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf",
+    "isWireless" : false
+  }, {
+    "id" : "QqFkU8Iq7MatonQRY9D8m",
+    "source" : "T9cq2ubBKS7GM87TKXmvp$$W4Wg7XQ2zEoQ0E8NXg9Qj",
+    "sourcePort" : "GAkjC7XL6QJzrKjyyVue8$$U7wqaPG6R5Mm0h6gTNGHT",
+    "target" : "fRXQ-e0hiIJNvKvLzH7To$$6LSnG68VPjzYVvD9XIGCS",
+    "targetPort" : "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3",
+    "isWireless" : false
+  }, {
+    "id" : "ZyPJlmQaQHaTnj-pGDxWH$$-8ct1JmqVbHakv1WOllKG",
+    "source" : "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt",
+    "sourcePort" : "5cjfJ-RhieEqOL0f3SkV0$$-uPpbiH1fD3UlMn2Iees6",
+    "target" : "-2ZL9_kUiuiw04OXNzQin$$LUCHZbi13qJmZnQAqZOYv",
+    "targetPort" : "m9XwxaIomExybgMYt4646$$kc89_j9wuCkzq3itvvUKs",
+    "isWireless" : false
+  }, {
+    "id" : "Ep7l57Ju1_bHIHhR_yZFa$$eT0YULLS7CoxJ9gudnprK",
+    "source" : "3ZCYKeveu2A5ejnSofSMI$$Roor2lGHwZICQck_2IWm3",
+    "sourcePort" : "ZUcauBQFlQ876kTsvMMao$$BRKY8R1-9Du5XM56xWpNX",
+    "target" : "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt",
+    "targetPort" : "icJPKBqt-wz-tWHYK4zni$$Tet34dO89f-Ecf0ZOaM18",
+    "isWireless" : false
+  }, {
+    "id" : "MpCR_wnWk1nrI7ih8SGQy",
+    "source" : "06MFSRchL-BYPxYsgOrBi$$P1TFZlLhCD-XD3z9WowhH",
+    "sourcePort" : "7oe1Tv-AS3un4Y2xJ_kr8$$C377RT3c5LRdlUL_VvMWB",
+    "target" : "vDh5zGIbezGLjMSeh8hJ8$$D75mOOcsz0YJobsTYFGZt",
+    "targetPort" : "zqoGDP2Z9Iht3j2VE4UzS$$sYlFJasq0qhxt290IWBzO",
+    "isWireless" : false
+  } ],
+  "component" : "Model"
+}
