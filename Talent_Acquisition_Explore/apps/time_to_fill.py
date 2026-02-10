@@ -27,7 +27,7 @@ with Analysis(app_id = "time_to_fill", meta_info = meta_info) as analysis:
         title = "Number of Positions Open by In-house Coordinator", 
         x_axis_column = "Coordinator", 
         y_axis_columns = [         YAxisColumn(
-           name = "Requisition ID", 
+           name = "Time Open", 
            agg = AggregationType.COUNT, 
            color = "#4c4ddc"
          )]
