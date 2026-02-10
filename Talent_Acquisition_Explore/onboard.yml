@@ -18,5 +18,5 @@ onboarding_prompts:
     - category: TRANSFORMATION
       prompts:
         - prompt: Which sourcing agency performed the best overall?
-        - prompt: Build a chart for how roles are progressing through the hiring pipeline and add it to the dashboard
+        - prompt: Add a chart showing how roles are progressing through the hiring pipeline
         - prompt: Add a chart showing the average days to fill a position by coordinator
