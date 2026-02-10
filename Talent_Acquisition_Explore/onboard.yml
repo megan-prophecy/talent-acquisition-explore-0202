@@ -11,11 +11,12 @@ onboarding_prompts:
   prompts:
     - category: EXPLORATION
       prompts:
-        - prompt: How are the stages defined and mapped from the source system?
-        - prompt: How is this hiring data distributed across regions?
-        - prompt: Provide a summary of the data quality
+        - prompt: What kind of analyses can I build with this data?
+        - prompt: Do engineering positions take the longest time to fill for all agencies?
+        - prompt: Why does David Williams have so many more positions open?
+
     - category: TRANSFORMATION
       prompts:
-        - prompt: Which coordinator had positions that were open the longest on average?
-        - prompt: Which agencies successfully sourced hired candidates? 
-        - prompt: In which interview category are the most candidates rejected?
+        - prompt: Which sourcing agency performed the best overall?
+        - prompt: Build a chart for how roles are progressing through the hiring pipeline and add it to the dashboard
+        - prompt: Add a chart showing the average days to fill a position by coordinator
