@@ -106,8 +106,7 @@
         },
         "errors" : { },
         "type" : "pie"
-      },
-      "errors" : { }
+      }
     } ]
   },
   "instances" : { }
