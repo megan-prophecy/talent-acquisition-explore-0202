@@ -27,10 +27,8 @@ with BusinessApp(app_id = "time_to_fill", meta_info = meta_info) as business_app
         title = "Number of Positions Open by In-house Coordinator", 
         x_axis_column = "Coordinator", 
         y_axis_columns = [         YAxisColumn(
-           name = "Time Open", 
+           name = "Requisition ID", 
            agg = AggregationType.COUNT, 
            color = "#4c4ddc"
-         )], 
-        center_y = 60, 
-        angle = PieAngle.SEMI
+         )]
     )
