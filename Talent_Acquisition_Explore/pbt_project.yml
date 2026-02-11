@@ -1,6 +1,6 @@
 name: Talent_Acquisition_Explore
 description: ''
-version: '5'
+version: '4'
 author: bowers.megan@prophecy.io
 language: sql
 buildSystem: ''
