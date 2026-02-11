@@ -1,22 +1,21 @@
 onboarding_prompts:
-  title: 'Pipeline'
+  title: 'talent sourcing pipeline'
   welcomeTitle: 'Welcome to Prophecy'
   datasets:
-    - id: recruiting_1
-      name: recruiting_1
-    - id: recruiting_2
-      name: recruiting_2
+    - id: recruiting_output1
+      name: recruiting_output1
+    - id: recruiting_output2
+      name: recruiting_output2
     - id: mapping_table
       name: mapping_table
   prompts:
     - category: EXPLORATION
       prompts:
-        - prompt: What kind of analyses can I build with this data?
-        - prompt: Do engineering positions take the longest time to fill for all agencies?
-        - prompt: Why does David Williams have so many more positions open?
-
+        - prompt: How are the stages defined and mapped from the source system?
+        - prompt: How is this hiring data distributed across regions?
+        - prompt: Provide a summary of the data quality
     - category: TRANSFORMATION
       prompts:
-        - prompt: Which sourcing agency performed the best overall?
-        - prompt: Add a chart showing how roles are progressing through the hiring pipeline
-        - prompt: Add a chart showing the average days to fill a position by coordinator
+        - prompt: Which coordinator had positions that were open the longest on average?
+        - prompt: Which agencies successfully sourced hired candidates? 
+        - prompt: In which interview category are the most candidates rejected?
