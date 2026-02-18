@@ -73,7 +73,7 @@
         "autoUpdateComment" : true
       },
       "properties" : {
-        "columnsSelector" : [ "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Requisition ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Opening ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Department", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Applied For", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Recruiter", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Coordinator", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Source", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Stage", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Application Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Start Date (Application)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Reason", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Note", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Created (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Offer Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sent", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Start Date (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Close Date (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Open Date (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Last Stage Change", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Last Activity", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Type", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Resolved", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sourcing Strategy", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sourcers", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Offices", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Application ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Category", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Definition" ],
+        "columnsSelector" : [ "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Requisition ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Opening ID", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Department", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Applied For", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Recruiter", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Coordinator", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Source", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Stage", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Application Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Start Date (Application)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Rejection Reason", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Created (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Offer Date", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sent", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Start Date (Offer)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Close Date (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Open Date (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Status (Job)", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Last Stage Change", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Last Activity", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Type", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Resolved", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sourcing Strategy", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Sourcers", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Offices", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Category", "UppLRmk8ueWY05iTOa8rm$$AsaW7ZSkIuhHYVyfRIief##Definition" ],
         "expressions" : [ {
           "expression" : {
             "expression" : "\"Requisition ID\""
@@ -152,12 +152,6 @@
           },
           "alias" : "\"Rejection Reason\"",
           "_row_id" : "752420036"
-        }, {
-          "expression" : {
-            "expression" : "\"Rejection Note\""
-          },
-          "alias" : "\"Rejection Note\"",
-          "_row_id" : "32647051"
         }, {
           "expression" : {
             "expression" : "\"Created (Offer)\""
@@ -248,12 +242,6 @@
           },
           "alias" : "Offices",
           "_row_id" : "1200608660"
-        }, {
-          "expression" : {
-            "expression" : "\"Application ID\""
-          },
-          "alias" : "\"Application ID\"",
-          "_row_id" : "1265540994"
         }, {
           "expression" : {
             "expression" : "Category"
@@ -499,12 +487,6 @@
           "_row_id" : "525881172"
         }, {
           "expression" : {
-            "expression" : "in0.\"Rejection Note\""
-          },
-          "alias" : "\"Rejection Note\"",
-          "_row_id" : "1480480773"
-        }, {
-          "expression" : {
             "expression" : "in0.\"Created (Offer)\""
           },
           "alias" : "\"Created (Offer)\"",
@@ -595,12 +577,6 @@
           "_row_id" : "1438545353"
         }, {
           "expression" : {
-            "expression" : "in0.\"Application ID\""
-          },
-          "alias" : "\"Application ID\"",
-          "_row_id" : "500567230"
-        }, {
-          "expression" : {
             "expression" : "in1.Category"
           },
           "alias" : "Category",
@@ -613,7 +589,7 @@
           "_row_id" : "1362258694"
         } ],
         "activeTab" : "conditions",
-        "columnsSelector" : [ "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Requisition ID", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Opening ID", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Department", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Applied For", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Recruiter", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Coordinator", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Source", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Application Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Start Date (Application)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Reason", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Note", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Created (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Offer Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sent", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Start Date (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Close Date (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Open Date (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Last Stage Change", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Last Activity", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Type", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Resolved", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sourcing Strategy", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sourcers", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Offices", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Application ID", "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Category", "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Definition" ],
+        "columnsSelector" : [ "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Requisition ID", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Opening ID", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Department", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Applied For", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Recruiter", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Coordinator", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Source", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Stage", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Application Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Start Date (Application)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Rejection Reason", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Created (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Offer Date", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sent", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Start Date (Offer)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Close Date (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Open Date (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Status (Job)", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Last Stage Change", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Last Activity", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Type", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Resolved", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sourcing Strategy", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Sourcers", "siBfHSx5-r8Wj6f77mLkV$$_HC4Jmx2dsSAWpLDHREYf##Offices", "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Category", "GBghys1u3L4rVc9ml1ypB$$BaE1SbIGqIaJGOgY3X0p3##Definition" ],
         "headAlias" : "in0"
       },
       "ports" : {
@@ -684,7 +660,7 @@
             "value" : "[\"Union_1\"]"
           }, {
             "name" : "schema",
-            "value" : "[{\"name\": \"Requisition ID\", \"dataType\": \"String\"}, {\"name\": \"Opening ID\", \"dataType\": \"String\"}, {\"name\": \"Department\", \"dataType\": \"String\"}, {\"name\": \"Applied For\", \"dataType\": \"String\"}, {\"name\": \"Recruiter\", \"dataType\": \"String\"}, {\"name\": \"Coordinator\", \"dataType\": \"String\"}, {\"name\": \"Source\", \"dataType\": \"String\"}, {\"name\": \"Stage\", \"dataType\": \"String\"}, {\"name\": \"Status\", \"dataType\": \"String\"}, {\"name\": \"Application Date\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Application)\", \"dataType\": \"String\"}, {\"name\": \"Rejection Date\", \"dataType\": \"String\"}, {\"name\": \"Rejection Reason\", \"dataType\": \"String\"}, {\"name\": \"Rejection Note\", \"dataType\": \"String\"}, {\"name\": \"Created (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Status (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Offer Date\", \"dataType\": \"String\"}, {\"name\": \"Sent\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Close Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Open Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Status (Job)\", \"dataType\": \"String\"}, {\"name\": \"Last Stage Change\", \"dataType\": \"String\"}, {\"name\": \"Last Activity\", \"dataType\": \"String\"}, {\"name\": \"Type\", \"dataType\": \"String\"}, {\"name\": \"Resolved\", \"dataType\": \"String\"}, {\"name\": \"Sourcing Strategy\", \"dataType\": \"String\"}, {\"name\": \"Sourcers\", \"dataType\": \"String\"}, {\"name\": \"Offices\", \"dataType\": \"String\"}, {\"name\": \"Application ID\", \"dataType\": \"BigInt\"}]"
+            "value" : "[{\"name\": \"Requisition ID\", \"dataType\": \"String\"}, {\"name\": \"Opening ID\", \"dataType\": \"String\"}, {\"name\": \"Department\", \"dataType\": \"String\"}, {\"name\": \"Applied For\", \"dataType\": \"String\"}, {\"name\": \"Recruiter\", \"dataType\": \"String\"}, {\"name\": \"Coordinator\", \"dataType\": \"String\"}, {\"name\": \"Source\", \"dataType\": \"String\"}, {\"name\": \"Stage\", \"dataType\": \"String\"}, {\"name\": \"Status\", \"dataType\": \"String\"}, {\"name\": \"Application Date\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Application)\", \"dataType\": \"String\"}, {\"name\": \"Rejection Date\", \"dataType\": \"String\"}, {\"name\": \"Rejection Reason\", \"dataType\": \"String\"}, {\"name\": \"Created (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Status (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Offer Date\", \"dataType\": \"String\"}, {\"name\": \"Sent\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Close Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Open Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Status (Job)\", \"dataType\": \"String\"}, {\"name\": \"Last Stage Change\", \"dataType\": \"String\"}, {\"name\": \"Last Activity\", \"dataType\": \"String\"}, {\"name\": \"Type\", \"dataType\": \"String\"}, {\"name\": \"Resolved\", \"dataType\": \"String\"}, {\"name\": \"Sourcing Strategy\", \"dataType\": \"String\"}, {\"name\": \"Sourcers\", \"dataType\": \"String\"}, {\"name\": \"Offices\", \"dataType\": \"String\"}]"
           }, {
             "name" : "columnNames",
             "value" : "[\"Application Date\", \"Start Date (Application)\", \"Rejection Date\", \"Offer Date\", \"Start Date (Offer)\", \"Close Date (Job)\", \"Open Date (Job)\"]"
@@ -702,7 +678,7 @@
             "value" : ""
           } ]
         },
-        "schema" : "[{\"name\": \"Requisition ID\", \"dataType\": \"String\"}, {\"name\": \"Opening ID\", \"dataType\": \"String\"}, {\"name\": \"Department\", \"dataType\": \"String\"}, {\"name\": \"Applied For\", \"dataType\": \"String\"}, {\"name\": \"Recruiter\", \"dataType\": \"String\"}, {\"name\": \"Coordinator\", \"dataType\": \"String\"}, {\"name\": \"Source\", \"dataType\": \"String\"}, {\"name\": \"Stage\", \"dataType\": \"String\"}, {\"name\": \"Status\", \"dataType\": \"String\"}, {\"name\": \"Application Date\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Application)\", \"dataType\": \"String\"}, {\"name\": \"Rejection Date\", \"dataType\": \"String\"}, {\"name\": \"Rejection Reason\", \"dataType\": \"String\"}, {\"name\": \"Rejection Note\", \"dataType\": \"String\"}, {\"name\": \"Created (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Status (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Offer Date\", \"dataType\": \"String\"}, {\"name\": \"Sent\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Close Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Open Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Status (Job)\", \"dataType\": \"String\"}, {\"name\": \"Last Stage Change\", \"dataType\": \"String\"}, {\"name\": \"Last Activity\", \"dataType\": \"String\"}, {\"name\": \"Type\", \"dataType\": \"String\"}, {\"name\": \"Resolved\", \"dataType\": \"String\"}, {\"name\": \"Sourcing Strategy\", \"dataType\": \"String\"}, {\"name\": \"Sourcers\", \"dataType\": \"String\"}, {\"name\": \"Offices\", \"dataType\": \"String\"}, {\"name\": \"Application ID\", \"dataType\": \"BigInt\"}]",
+        "schema" : "[{\"name\": \"Requisition ID\", \"dataType\": \"String\"}, {\"name\": \"Opening ID\", \"dataType\": \"String\"}, {\"name\": \"Department\", \"dataType\": \"String\"}, {\"name\": \"Applied For\", \"dataType\": \"String\"}, {\"name\": \"Recruiter\", \"dataType\": \"String\"}, {\"name\": \"Coordinator\", \"dataType\": \"String\"}, {\"name\": \"Source\", \"dataType\": \"String\"}, {\"name\": \"Stage\", \"dataType\": \"String\"}, {\"name\": \"Status\", \"dataType\": \"String\"}, {\"name\": \"Application Date\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Application)\", \"dataType\": \"String\"}, {\"name\": \"Rejection Date\", \"dataType\": \"String\"}, {\"name\": \"Rejection Reason\", \"dataType\": \"String\"}, {\"name\": \"Created (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Status (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Offer Date\", \"dataType\": \"String\"}, {\"name\": \"Sent\", \"dataType\": \"String\"}, {\"name\": \"Start Date (Offer)\", \"dataType\": \"String\"}, {\"name\": \"Close Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Open Date (Job)\", \"dataType\": \"String\"}, {\"name\": \"Status (Job)\", \"dataType\": \"String\"}, {\"name\": \"Last Stage Change\", \"dataType\": \"String\"}, {\"name\": \"Last Activity\", \"dataType\": \"String\"}, {\"name\": \"Type\", \"dataType\": \"String\"}, {\"name\": \"Resolved\", \"dataType\": \"String\"}, {\"name\": \"Sourcing Strategy\", \"dataType\": \"String\"}, {\"name\": \"Sourcers\", \"dataType\": \"String\"}, {\"name\": \"Offices\", \"dataType\": \"String\"}]",
         "expressionToBeApplied" : "strptime(column_value, '%m/%d/%Y')",
         "prefixSuffixToBeAdded" : "",
         "prefixSuffixOption" : "Prefix"

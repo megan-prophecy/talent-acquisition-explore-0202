@@ -99,9 +99,6 @@ sqlSources:
         - name: Rejection Reason
           dataType:
             type: String
-        - name: Rejection Note
-          dataType:
-            type: String
         - name: Created (Offer)
           dataType:
             type: String
@@ -147,9 +144,6 @@ sqlSources:
         - name: Offices
           dataType:
             type: String
-        - name: Application ID
-          dataType:
-            type: BigInt
       description: null
       author: bowers.megan@prophecy.io
       createdAt: '2026-02-02 16:14:29'
@@ -198,9 +192,6 @@ sqlSources:
         - name: Rejection Reason
           dataType:
             type: String
-        - name: Rejection Note
-          dataType:
-            type: String
         - name: Created (Offer)
           dataType:
             type: String
@@ -246,9 +237,6 @@ sqlSources:
         - name: Offices
           dataType:
             type: String
-        - name: Application ID
-          dataType:
-            type: BigInt
       description: null
       author: bowers.megan@prophecy.io
       createdAt: '2026-02-02 16:15:03'

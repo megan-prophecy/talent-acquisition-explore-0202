@@ -49,9 +49,6 @@ sources:
     - name: "Rejection Reason"
       dataType:
         type: "String"
-    - name: "Rejection Note"
-      dataType:
-        type: "String"
     - name: "Created (Offer)"
       dataType:
         type: "String"
@@ -97,9 +94,6 @@ sources:
     - name: "Offices"
       dataType:
         type: "String"
-    - name: "Application ID"
-      dataType:
-        type: "BigInt"
     type: "table"
   - name: "recruiting_2"
     config:
@@ -145,9 +139,6 @@ sources:
     - name: "Rejection Reason"
       dataType:
         type: "String"
-    - name: "Rejection Note"
-      dataType:
-        type: "String"
     - name: "Created (Offer)"
       dataType:
         type: "String"
@@ -193,9 +184,6 @@ sources:
     - name: "Offices"
       dataType:
         type: "String"
-    - name: "Application ID"
-      dataType:
-        type: "BigInt"
     type: "table"
   - name: "mapping_table"
     config:

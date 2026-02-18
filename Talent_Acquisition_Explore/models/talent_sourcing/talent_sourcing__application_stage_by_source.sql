@@ -65,7 +65,6 @@ parse_application_dates AS (
         'Start Date (Application)', 
         'Rejection Date', 
         'Rejection Reason', 
-        'Rejection Note', 
         'Created (Offer)', 
         'Status (Offer)', 
         'Offer Date', 
@@ -80,8 +79,7 @@ parse_application_dates AS (
         'Resolved', 
         'Sourcing Strategy', 
         'Sourcers', 
-        'Offices', 
-        'Application ID'
+        'Offices'
       ], 
       [
         'Application Date', 
@@ -117,7 +115,6 @@ application_stage_details AS (
     in0."Start Date (Application)" AS "Start Date (Application)",
     in0."Rejection Date" AS "Rejection Date",
     in0."Rejection Reason" AS "Rejection Reason",
-    in0."Rejection Note" AS "Rejection Note",
     in0."Created (Offer)" AS "Created (Offer)",
     in0."Status (Offer)" AS "Status (Offer)",
     in0."Offer Date" AS "Offer Date",
@@ -133,7 +130,6 @@ application_stage_details AS (
     in0."Sourcing Strategy" AS "Sourcing Strategy",
     in0.Sourcers AS Sourcers,
     in0.Offices AS Offices,
-    in0."Application ID" AS "Application ID",
     in1.Category AS Category,
     in1.Definition AS Definition
   
@@ -160,7 +156,6 @@ calc_time_to_fill AS (
     "Start Date (Application)" AS "Start Date (Application)",
     "Rejection Date" AS "Rejection Date",
     "Rejection Reason" AS "Rejection Reason",
-    "Rejection Note" AS "Rejection Note",
     "Created (Offer)" AS "Created (Offer)",
     "Status (Offer)" AS "Status (Offer)",
     "Offer Date" AS "Offer Date",
@@ -176,7 +171,6 @@ calc_time_to_fill AS (
     "Sourcing Strategy" AS "Sourcing Strategy",
     Sourcers AS Sourcers,
     Offices AS Offices,
-    "Application ID" AS "Application ID",
     Category AS Category,
     Definition AS Definition,
     DATEDIFF('day', "Open Date (Job)", "Close Date (Job)") AS "Time Open"
